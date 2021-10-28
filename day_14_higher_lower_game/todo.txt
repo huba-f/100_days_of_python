@@ -1,0 +1,12 @@
+# todo
+
+    - make the dict of peoples @@
+    - chose a random person
+    - print the data of the person
+    - chose another one
+    - get the user input
+    - check if the previous person == user guess
+    - continue or not
+
+
+
