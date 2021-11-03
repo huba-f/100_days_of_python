@@ -3,9 +3,9 @@ from twilio.rest import Client
 
 OWM_ENDPOINT = "https://api.openweathermap.org/data/2.5/onecall"
 
-api_key = "7654fbe02a9bf55f07a710dda42e5fe4"
-twilio_account_sid = "ACaabfffdbce4d6cb8426d1988720c0b88"
-twilio_auth_token = "caaec60861d85ab8ec07e7bd99c848f2"
+api_key = "xxxx"
+twilio_account_sid = "xxxx"
+twilio_auth_token = "xxxx"
 
 client = Client(twilio_account_sid, twilio_auth_token)
 
@@ -41,6 +41,6 @@ elif will_rain:
         .create(
         body="Today there will be rain!",
         from_='+12674891940',
-        to='+400757797751'
+        to='+xxxx'
     )
     print(message.status)
