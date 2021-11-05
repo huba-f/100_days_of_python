@@ -33,7 +33,7 @@ if will_snow:
         .create(
         body="Today there will be snow!",
         from_='+12674891940',
-        to='+0757797751'
+        to='+xxxxx'
     )
     print(message.status)
 elif will_rain:
