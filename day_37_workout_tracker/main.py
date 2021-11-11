@@ -37,9 +37,13 @@ current_hour = datetime.now().hour
 current_minute = datetime.now().minute
 current_time = f"{current_hour}:{current_minute}"
 
-scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
+scope = ["https://spreadsheets.google.com/feeds",'https://www.googleapis.com/auth/spreadsheets',"https://www"
+                                                                                                ".googleapis.com/auth"
+                                                                                                "/drive.file",
+         "https://www.googleapis.com/auth/drive"]
 
-creds = ServiceAccountCredentials.from_json_keyfile_name("workout-tracker-331503-92fddb8799cd.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("/home/huba/code/authenticate/workout-tracker-331503"
+                                                         "-92fddb8799cd.json", scope)
 
 client = gspread.authorize(creds)
 sheet = client.open("MyWorkouts").sheet1
