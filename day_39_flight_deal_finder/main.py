@@ -2,13 +2,17 @@ from datetime import datetime, timedelta
 from data_manager import DataManager
 from flight_search import FlightSearch
 from notification_manager import NotificationManager
+from new_user import NewUser
 
-ORIGIN_CITY_IATA = "xx"
+ORIGIN_CITY_IATA = "BUH"
+
+new_user = NewUser()
 
 data_manager = DataManager()
 flight_search = FlightSearch()
 notification_manager = NotificationManager()
 
+new_user.insert_new_user()
 sheet_data = data_manager.get_destination_data()
 
 if sheet_data[0]["iataCode"] == "":
@@ -33,3 +37,6 @@ for destination in sheet_data:
         notification_manager.send_sms(
             message=f"Low price alert! Only £{flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
         )
+        for e in new_user.emails[1:]:
+            notification_manager.send_email(email=e,
+                                            text=f"Low price alert! Only {flight.price} pound to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}.")
