@@ -1,0 +1,82 @@
+body {
+  background-color: #D8E3E7;
+  margin: 0;
+  text-align: center;
+  font-family: monospace;
+}
+
+.top-container {
+  background-color: #51C4D3;
+  margin: 0;
+  position: relative;
+  padding: 100px 0 0 0;
+  height: 100vh;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 50px;
+}
+
+p {
+  margin: 0;
+  font-size: 30px
+}
+
+.middle-container {
+  background-color: #D8E3E7;
+  margin: 0;
+}
+
+.bottom-container {
+  background-color: #126E82;
+  margin: 0;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+}
+/* #132C33 */
+.skill-row p {
+  line-height: 2;
+}
+
+.btn {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: black;
+}
+
+.forest {
+
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+
+.ice-bucket {
+
+    width: 25%;
+    float: right;
+    margin-left: 30px;
+}
+
+.top-cloud {
+  position: absolute;
+  width: 200px;
+  right: 20%;
+}
+
+.bottom-cloud {
+  position: absolute;
+  width: 200px;
+  left: 20%;
+}
+
+.mountain {
+  margin-top: 10%;
+  width: 25%;
+}
