@@ -11,6 +11,8 @@ if level == 'hard':
     lives = 5
 elif level == 'easy':
     lives = 10
+
+
 def game():
     global lives
     guess = int(input(f'you got {lives} live(s), enter your guess: '))
@@ -33,5 +35,6 @@ def game():
     else:
         print('your number is out of range')
         game()
+
 
 game()
