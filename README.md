@@ -1,5 +1,5 @@
 # 100_days_of_python
 
-**documenting my journey of learning python during 100 days**
+<b>documenting my journey of learning python during 100 days</b>
 
-# ![python logo](python.png)
+<img src="python.jpg" alt="drawing" width="200"/>
