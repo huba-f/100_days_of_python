@@ -2,4 +2,4 @@
 
 <b>documenting my journey of learning python during 100 days</b>
 
-<img src="python.jpg" alt="drawing" width="200"/>
+<img src="python.png" alt="drawing" width="200"/>
