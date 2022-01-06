@@ -1,0 +1,17 @@
+.col {
+	margin: 2px;
+	background-color: #FFA500;
+	color: white;
+	text-align: center;
+}
+
+.sizein {
+	margin: 10px;
+	background-color: #FFA500;
+	color: white;
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 3% 15%;
+}
