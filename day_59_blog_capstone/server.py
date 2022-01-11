@@ -3,7 +3,7 @@ import requests
 import smtplib
 
 local_email = 'nyelrugosibakugan@gmail.com'
-local_password = 'macskafasza'
+local_password = 'xxxx'
 
 app = Flask(__name__)
 

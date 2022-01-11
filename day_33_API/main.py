@@ -4,7 +4,7 @@ import smtplib
 
 
 my_email = 'nyelrugosibakugan@gmail.com'
-my_password = 'macskafasza'
+my_password = 'xxxx'
 
 is_on = True
 # getting api

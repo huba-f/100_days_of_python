@@ -3,7 +3,7 @@ import requests
 import smtplib
 
 my_email = 'nyelrugosibakugan@gmail.com'
-my_password = 'macskafasza'
+my_password = 'xxxx'
 
 
 response = requests.get("https://www.emag.ro/laptop-apple-macbook-pro-14-2021-cu-procesor-apple-m1-pro-8-nuclee-cpu"

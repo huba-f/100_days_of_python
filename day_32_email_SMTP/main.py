@@ -6,7 +6,7 @@ import datetime as dt
 import random
 
 my_email = 'nyelrugosibakugan@gmail.com'
-my_password = 'macskafasza'
+my_password = 'xxxx'
 
 
 

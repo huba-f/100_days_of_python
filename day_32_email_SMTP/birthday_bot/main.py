@@ -6,7 +6,7 @@ import pandas
 
 # constants
 my_email = 'nyelrugosibakugan@gmail.com'
-my_password = 'macskafasza'
+my_password = 'xxxx'
 
 
 
