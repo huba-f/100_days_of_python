@@ -1,5 +1,9 @@
-from flask import Flask, render_template
+from flask import Flask, request, render_template
 import requests
+import smtplib
+
+local_email = 'nyelrugosibakugan@gmail.com'
+local_password = 'macskafasza'
 
 app = Flask(__name__)
 
@@ -22,7 +26,23 @@ def get_about():
     return render_template('about.html')
 
 @app.route('/contact')
+def get_contact_page():
+    return render_template('contact.html')
+
+
+@app.route('/contact/done', methods=['GET', 'POST'])
 def get_contact():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    phone = request.form.get('phone')
+    message = request.form.get('message')
+    with smtplib.SMTP('smtp.gmail.com') as connection:
+        connection.starttls()
+        connection.login(user=local_email, password=local_password)
+        connection.sendmail(
+            from_addr=local_email,
+            to_addrs=email,
+            msg=f"Subject:New Message\n\nContact name: {name}\nContact email: {email}\nContact phone: {phone}\nContact message: {message}")
     return render_template('contact.html')
 
 
