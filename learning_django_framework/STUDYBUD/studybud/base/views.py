@@ -6,6 +6,7 @@ from django.db.models import Q
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.forms import UserCreationForm
+from django.template import context
 from .models import Room, Topic, Message
 from .forms import RoomForm
 
@@ -105,6 +106,18 @@ def room(request, pk):
     context = {'room': room, 'room_messages': room_messages, 'participants': participants}            
     return render(request, 'base/room.html', context)
 
+
+# user profile
+def user_profile(request, pk):
+    user = User.objects.get(id=pk)
+    rooms = user.room_set.all()
+    room_messages = user.message_set.all()
+    topics = Topic.objects.all()
+    context = {'user': user, 'rooms': rooms, 'room_messages': room_messages, 'topics': topics}
+    return render(request, 'base/profile.html', context)
+
+
+# create room
 @login_required(login_url='login')
 def create_room(request):
     form = RoomForm()
@@ -118,6 +131,7 @@ def create_room(request):
     context = {'form': form}
     return render(request, 'base/room_form.html', context)
 
+#update room
 @login_required(login_url='login')
 def update_room(request, pk):
     room = Room.objects.get(id=pk)
