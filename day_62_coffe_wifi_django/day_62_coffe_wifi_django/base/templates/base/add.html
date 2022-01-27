@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 col-md-8">
+
+      <h1>Add a new cafe into the database</h1>
+
+      <form action="" method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value=Submit">
+      </form>
+
+
+      <p class="space-above"><a href="{% url 'cafes' %}">See all cafes</a></p>
+
+    </div>
+  </div>
+</div>
