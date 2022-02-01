@@ -13,3 +13,4 @@ def home(request):
         return render(request, 'website/index.html', {'all_books': all_books})
     all_books = AddBook.objects.all()
     return render(request, 'website/index.html', {'all_books': all_books})
+    
