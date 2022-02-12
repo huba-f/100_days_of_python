@@ -3,7 +3,7 @@ import telegram_send
 import smtplib
 
 
-my_email = 'nyelrugosibakugan@gmail.com'
+my_email = 'torolkozo@mocskos.com'
 my_password = 'xxxx'
 
 is_on = True
