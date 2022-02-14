@@ -1,12 +1,9 @@
-
-
-
 import smtplib
 import datetime as dt
 import random
 
 my_email = 'nyelrugosibakugan@gmail.com'
-my_password = 'xxxx'
+my_password = 'xxxxx'
 
 
 
@@ -27,3 +24,4 @@ if now.weekday() == 6:
 			to_addrs='huba0ferencz@gmail.com',
             msg=f"Subject:sunday motivation\n\n{random_quote}")
 	print(random_quote)
+	
