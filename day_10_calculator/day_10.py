@@ -1,6 +1,5 @@
 # calculator app
 
-# hi there
 
 # add
 def add(n1, n2):
