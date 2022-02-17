@@ -20,7 +20,6 @@ table.add_rows(
         ['Aerodactyl', 'Flying'],
         ['Aggron', 'Rock'],
         ['Aipom', 'Normal'],
-        ['Alakazam', 'Psychic'],
     ]
 )
 table.align = 'l'
