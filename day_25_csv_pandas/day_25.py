@@ -1,24 +1,3 @@
-# data = []
-# with open("weather_data.csv", mode='r') as file:
-#     for day in file.readlines():
-#         data.append(day.strip())
-# print(data)
-# import csv
-#
-# # opening the csv file
-# with open("weather_data.csv") as data_files:
-#     data = csv.reader(data_files)
-#     list_of_forecast = []
-#     temperatures = []
-#     # extracting from 'data' obj to 'list_of_forecast' list
-#     for row in data:
-#         list_of_forecast.append(row)
-#     # converting the temps from 'str' to 'int'
-#     for day in list_of_forecast[1:]:
-#         temperatures.append(int(day[1]))
-#
-#     print(temperatures)
-
 import pandas
 
 data = pandas.read_csv("weather_data.csv")
